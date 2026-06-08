@@ -1,0 +1,32 @@
+{
+  "title": "Calcula tu envío por código postal",
+  "description": "Ingresa tu código postal y revisa si tu pedido entra en zona de envío sin costo o si aplica la tarifa de reparto.",
+  "placeholder": "Ej. 04100",
+  "buttonLabel": "Consultar envío",
+  "freePostalCodes": [
+    "04100",
+    "04000",
+    "04010",
+    "04020",
+    "04030",
+    "04040",
+    "04120"
+  ],
+  "paidPostalCodes": [],
+  "noCoveragePostalCodes": [
+    "04300",
+    "04369",
+    "04640"
+  ],
+  "shippingFee": 30,
+  "messages": {
+    "empty": "Ingresa un código postal válido de 5 dígitos.",
+    "invalid": "Ingresa un código postal válido de 5 dígitos.",
+    "freeTitle": "Envío sin costo",
+    "free": "Tu código postal entra en zona de envío gratis.",
+    "noCoverageTitle": "Sin cobertura",
+    "noCoverage": "Por el momento no contamos con cobertura en tu zona. Puedes escribirnos por WhatsApp para revisar disponibilidad especial.",
+    "paidTitle": "Envío con costo",
+    "paid": "Tu zona tiene un costo de envío de $30 pesos."
+  }
+}

@@ -1,0 +1,348 @@
+{
+  "promociones": [
+    {
+      "title": "La Mesa",
+      "description": "Precios claros para bisteces, molidas y cortes del diario.",
+      "badge": "Diario"
+    },
+    {
+      "title": "Cortes selectos",
+      "description": "Selección especial para asar, celebrar o pedir por kilo.",
+      "badge": "Selección"
+    },
+    {
+      "title": "Arrachera marinada",
+      "description": "Lista para cocinar y confirmar por WhatsApp.",
+      "badge": "Preparado"
+    },
+    {
+      "title": "Alto Vacío y reparto",
+      "description": "Confirma servicio, cobertura y disponibilidad de entrega.",
+      "badge": "Servicio"
+    }
+  ],
+  "notaPromocional": {
+    "title": "Obsequio por compra",
+    "text": "En compras mayores a $1,500, llévate una bolsa térmica de cortesía."
+  },
+  "seccionPromociones": {
+    "eyebrow": "MIÉRCOLES DE PLAZA",
+    "titlePrefix": "Solo en",
+    "title": "Carnes Espinosa",
+    "description": "Cada miércoles encuentra precios especiales para surtir tu semana con carne fresca, cortes selectos y atención de Carnes Espinosa.",
+    "ctaText": "Haz tu pedido por WhatsApp: 56 2051 1731",
+    "legalNote": "Válido los miércoles o hasta agotar existencias. Todo va empacado al Alto Vacío.",
+    "items": [
+      {
+        "producto": "Bistec de Sirloin",
+        "badge": "MIÉRCOLES",
+        "categoria": "La Mesa",
+        "copy": "Ideal para comidas del diario y compra de la semana.",
+        "precioPromocional": 250,
+        "unidad": "kg",
+        "destacado": true
+      },
+      {
+        "producto": "Molida Sirloin",
+        "badge": "COMPRA SEMANAL",
+        "categoria": "La Mesa",
+        "copy": "Práctica para guisados, hamburguesas y comidas del diario.",
+        "precioPromocional": 230,
+        "unidad": "kg"
+      },
+      {
+        "producto": "Arrachera marinada",
+        "badge": "PARA ASAR",
+        "categoria": "Preparados y especialidades",
+        "copy": "Marinada de la casa, lista para el asador.",
+        "precioPromocional": 280,
+        "unidad": "kg"
+      },
+      {
+        "producto": "Aguja Cargada",
+        "titulo": "Aguja",
+        "badge": "PARA CALDO",
+        "categoria": "La Mesa",
+        "copy": "Ideal para caldo.",
+        "precioPromocional": 135,
+        "unidad": "kg"
+      },
+      {
+        "producto": "Chambarete S/H",
+        "badge": "PARA CALDO",
+        "categoria": "La Mesa",
+        "copy": "Los huesos se ponen aparte sin costo.",
+        "precioPromocional": 235,
+        "unidad": "kg"
+      },
+      {
+        "producto": "Maciza",
+        "badge": "LA MESA",
+        "categoria": "La Mesa",
+        "copy": "Ideal para comidas del diario.",
+        "precioAnterior": 260,
+        "precioPromocional": 250,
+        "unidad": "kg"
+      }
+    ]
+  },
+  "categorias": [
+    {
+      "id": "la-mesa",
+      "nombre": "La Mesa",
+      "etiqueta": "Consumo diario",
+      "descripcion": "Productos de diario y cortes base para comida familiar, cocina casera y surtido de la semana.",
+      "productos": [
+        {
+          "nombre": "Bistec de Centro",
+          "precio": 260,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo",
+          "descripcion": "Corte clásico para la mesa diaria.",
+          "destacado": true
+        },
+        {
+          "nombre": "Bistec de Bola",
+          "precio": 260,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Bistec de Sirloin",
+          "precio": 260,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Contra Filete",
+          "precio": 280,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Costilla de Entrecot S/H",
+          "precio": 270,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo",
+          "descripcion": "Ideal para asar o preparar al gusto."
+        },
+        {
+          "nombre": "Costilla de Roast Beef",
+          "precio": 260,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Aguja Cargada",
+          "precio": 145,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Chorizo",
+          "precio": 120,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Cecina",
+          "precio": 350,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Chicharrón Prensado",
+          "precio": 130,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Tocino Ahumado",
+          "precio": 260,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Suadero",
+          "precio": 220,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Nuez",
+          "precio": 280,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Empuje",
+          "precio": 260,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Falda",
+          "precio": 260,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Chambarete S/H",
+          "precio": 240,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo",
+          "descripcion": "Los huesos se ponen aparte sin costo."
+        },
+        {
+          "nombre": "Molida Sirloin",
+          "precio": 240,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Molida Especial",
+          "precio": 250,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo",
+          "descripcion": "Muy buscada para surtir la semana.",
+          "destacado": true
+        }
+      ]
+    },
+    {
+      "id": "cortes-selectos",
+      "nombre": "Cortes selectos",
+      "etiqueta": "Selección especial",
+      "descripcion": "Cortes de calidad para parrillada, comida especial y clientes que buscan una mejor selección.",
+      "productos": [
+        {
+          "nombre": "Rib Eye",
+          "precio": 350,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo",
+          "destacado": true
+        },
+        {
+          "nombre": "Cow-Boy",
+          "precio": 350,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Picaña",
+          "precio": 350,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "New York",
+          "precio": 350,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Filete de Res (caña)",
+          "precio": 450,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Asado de Tira",
+          "precio": 350,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Tuétano",
+          "precio": 190,
+          "unidad": "paquete",
+          "unidadLabel": "Paquete de 6 canoas"
+        }
+      ]
+    },
+    {
+      "id": "preparados-y-especialidades",
+      "nombre": "Preparados y especialidades",
+      "etiqueta": "Listos para cocinar",
+      "descripcion": "Opciones marinadas, especiales y preparadas para una compra más práctica.",
+      "productos": [
+        {
+          "nombre": "Arrachera marinada",
+          "precio": 300,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo",
+          "descripcion": "Lista para cocinar y pedir por kilo.",
+          "destacado": true
+        },
+        {
+          "nombre": "Hamburguesa de Sirloin",
+          "precio": 180,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo",
+          "descripcion": "Aproximadamente 8 piezas por kilo."
+        },
+        {
+          "nombre": "Hamburguesa de Rib Eye",
+          "precio": 190,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo",
+          "descripcion": "Aproximadamente 8 piezas por kilo."
+        },
+        {
+          "nombre": "Aguja Norteña",
+          "precio": 220,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Rib Eye (Café)",
+          "precio": 350,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Rib Eye (Ajo, Pimienta y Hierbas Finas)",
+          "precio": 350,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Rib Eye (Queso Parmesano)",
+          "precio": 350,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Rib Eye (Mantequilla)",
+          "precio": 350,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        }
+      ]
+    },
+    {
+      "id": "servicios",
+      "nombre": "Servicios",
+      "etiqueta": "Atención y entrega",
+      "descripcion": "Apoyos para que tu compra llegue mejor organizada y lista para guardar o recibir.",
+      "productos": [
+        {
+          "nombre": "Empacado al Alto Vacío",
+          "precio": null,
+          "unidad": "servicio",
+          "unidadLabel": "Servicio",
+          "displayPrice": "Cotiza por WhatsApp",
+          "descripcion": "Pide tu compra porcionada y mejor organizada."
+        },
+        {
+          "nombre": "Reparto a domicilio",
+          "precio": null,
+          "unidad": "servicio",
+          "unidadLabel": "Servicio",
+          "displayPrice": "Consulta tu código postal",
+          "descripcion": "Confirma cobertura, horarios y disponibilidad de entrega con el cotizador de envío."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --font-sans: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(225, 16, 16, 0.1), transparent 28%),
+    radial-gradient(circle at top right, rgba(195, 160, 107, 0.1), transparent 22%),
+    linear-gradient(180deg, #fcfaf7 0%, #f5eee6 100%);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(225, 16, 16, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(225, 16, 16, 0.02) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: radial-gradient(circle at center, black 35%, transparent 86%);
+  opacity: 0.3;
+}
+
+::selection {
+  background: rgba(244, 42, 30, 0.18);
+  color: #17120e;
+}
+
+@layer components {
+  .surface-card {
+    @apply rounded-[30px] border border-humo bg-white shadow-premium;
+  }
+
+  .section-title {
+    @apply font-display text-4xl font-semibold leading-[1.02] tracking-[0.01em] text-carbon sm:text-5xl;
+  }
+
+  .eyebrow {
+    @apply text-[11px] font-semibold uppercase tracking-[0.32em] text-vino-700;
+  }
+
+  .gold-divider {
+    @apply mt-4 h-px w-full bg-gold-line;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-vino-700 px-6 py-3.5 text-sm font-semibold text-white shadow-[0_18px_36px_rgba(225,16,16,0.18)] transition hover:brightness-105;
+  }
+
+  .btn-whatsapp {
+    @apply relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full px-6 py-3.5 text-sm font-semibold text-white shadow-[0_20px_40px_rgba(225,16,16,0.22)] ring-1 ring-white/80 transition duration-200 hover:-translate-y-0.5 hover:brightness-[1.03];
+    background-image: linear-gradient(135deg, #b50e0e 0%, #e11010 52%, #ff5a52 100%);
+  }
+
+  .btn-whatsapp::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    border-radius: 9999px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0) 48%);
+    pointer-events: none;
+  }
+
+  .btn-whatsapp > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full border border-humo bg-white px-6 py-3.5 text-sm font-semibold text-carbon transition hover:border-vino-700/25 hover:bg-vino-50;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center rounded-full border border-transparent bg-arena px-6 py-3.5 text-sm font-semibold text-carbon transition hover:bg-vino-50;
+  }
+
+  .info-pill {
+    @apply inline-flex items-center rounded-full border border-humo bg-white px-4 py-2 text-sm font-medium text-carbon/80 shadow-sm;
+  }
+}

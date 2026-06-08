@@ -1,0 +1,74 @@
+{
+  "nombre": "Carnes Espinosa",
+  "logo": {
+    "src": "/images/logo-carnes-espinosa.png",
+    "alt": "Logo de Comercializadora de Carnes Espinosa",
+    "width": 1600,
+    "height": 1136
+  },
+  "headerTagline": "Carnes seleccionadas",
+  "heroEyebrow": "Carnicería tradicional en Coyoacán",
+  "ubicacion": "Mercado de Coyoacán No. 89, Coyoacán, CDMX",
+  "ubicacionCorta": "Mercado de Coyoacán No. 89",
+  "whatsappDisplay": "56 2051 1731",
+  "whatsappNumber": "525620511731",
+  "whatsappMessage": "Hola, vi la página de Carnes Espinosa. Me gustaría hacer un pedido a domicilio.",
+  "whatsappUrl": "https://wa.me/525620511731?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20Carnes%20Espinosa.%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20a%20domicilio.",
+  "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Carnes%20Espinosa%20Mercado%20de%20Coyoac%C3%A1n%20No.%2089",
+  "googleMapsQuery": "Carnes Espinosa Mercado de Coyoacán No. 89",
+  "googleMapsTodo": "TODO: Confirmar la URL exacta de Google Maps del negocio. Por ahora se usa un enlace de búsqueda de Google Maps.",
+  "ubicacionTexto": "Pregunta por Carnes Espinosa dentro del Mercado de Coyoacán.",
+  "horario": {
+    "titulo": "Horario temporal",
+    "dias": "Lunes a domingo",
+    "horas": "8:00 a.m. - 5:00 p.m.",
+    "nota": "Horario temporal compartido por el negocio. Confirma disponibilidad y reparto a domicilio por WhatsApp."
+  },
+  "instagram": {
+    "label": "@carnes_espinosa",
+    "url": "https://www.instagram.com/carnes_espinosa/"
+  },
+  "facebook": {
+    "label": "Carnes Espinosa",
+    "url": "https://www.facebook.com/search/top/?q=Carnes%20Espinosa"
+  },
+  "facebookTodo": "TODO: Reemplazar esta búsqueda por la URL exacta de la página de Facebook del negocio cuando se confirme.",
+  "seo": {
+    "title": "Carnes Espinosa | Carnicería en Mercado de Coyoacán",
+    "description": "Carnes Espinosa, carnicería en el Mercado de Coyoacán No. 89. Carnes seleccionadas, cortes selectos, arrachera marinada, molida especial, reparto a domicilio y Empacado al Alto Vacío.",
+    "keywords": [
+      "Carnes Espinosa",
+      "carnicería en Coyoacán",
+      "carnicería Mercado de Coyoacán",
+      "cortes selectos Coyoacán",
+      "carnes seleccionadas Coyoacán",
+      "carne para la mesa Coyoacán",
+      "Empacado al Alto Vacío CDMX",
+      "reparto de carne a domicilio Coyoacán",
+      "Rib eye Coyoacán",
+      "Arrachera marinada Coyoacán",
+      "Bistec de centro Coyoacán",
+      "Molida especial Coyoacán",
+      "Cecina Coyoacán",
+      "Chambarete Coyoacán"
+    ],
+    "twitterCard": "summary"
+  },
+  "seoTodo": "TODO: Agregar dominio oficial, canonical e imagen Open Graph/Twitter cuando exista el material final.",
+  "fraseHistorica": "69 años llevando calidad y servicio a su mesa.",
+  "descripcionNegocio": "Carnicería tradicional con carnes seleccionadas, cortes selectos y atención cercana.",
+  "heroTitle": "Carnes seleccionadas y cortes selectos para tu mesa",
+  "heroSubtitle": "Tradición, calidad y frescura desde el Mercado de Coyoacán No. 89.",
+  "heroText": "Haz tu pedido para la mesa diaria, una comida especial o tu parrillada del fin de semana. Con más de 69 años en el Mercado de Coyoacán, te atendemos por WhatsApp, con reparto a domicilio y Empacado al Alto Vacío.",
+  "vacuumTitle": "Carne porcionada y empacada al Alto Vacío",
+  "vacuumText": "Pide tus cortes listos para guardar, congelar o preparar durante la semana.",
+  "vacuumBenefits": [
+    "Mejor conservación",
+    "Porciones listas",
+    "Más limpieza y orden",
+    "Ideal para compras semanales",
+    "Mejor organización en refrigerador o congelador"
+  ],
+  "trustText": "Carnes Espinosa forma parte del Mercado de Coyoacán No. 89, con una trayectoria familiar enfocada en calidad, tradición, frescura y carnes seleccionadas. Hoy combinamos la atención cercana del mercado con pedidos por WhatsApp, reparto a domicilio y Empacado al Alto Vacío.",
+  "footerNote": "Lista de precios digital para compartir por WhatsApp y consultar en el local."
+}
