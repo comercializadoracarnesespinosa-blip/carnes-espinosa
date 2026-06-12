@@ -59,12 +59,13 @@
         "unidad": "kg"
       },
       {
-        "producto": "Aguja Cargada",
-        "titulo": "Aguja",
-        "badge": "PARA CALDO",
+        "producto": "Costilla de Roast Beef",
+        "titulo": "Costilla Roast Beef",
+        "badge": "PARA ASAR",
         "categoria": "La Mesa",
-        "copy": "Ideal para caldo.",
-        "precioPromocional": 135,
+        "copy": "Ideal para asar o preparar al gusto.",
+        "precioAnterior": 270,
+        "precioPromocional": 255,
         "unidad": "kg"
       },
       {
@@ -128,9 +129,10 @@
         },
         {
           "nombre": "Costilla de Roast Beef",
-          "precio": 260,
+          "precio": 270,
           "unidad": "kg",
-          "unidadLabel": "Por kilo"
+          "unidadLabel": "Por kilo",
+          "descripcion": "Ideal para asar o preparar al gusto."
         },
         {
           "nombre": "Aguja Cargada",

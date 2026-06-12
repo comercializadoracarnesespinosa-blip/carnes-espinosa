@@ -130,9 +130,14 @@ def get_lookup() -> dict[str, dict]:
     return lookup
 
 
-def draw_label(draw: ImageDraw.ImageDraw, box, text: str):
-    draw.rounded_rectangle(box, radius=18, fill=RED)
-    draw.text((box[0] + 18, box[1] + 9), text, font=font(AVENIR_NEXT, 20), fill=(255, 255, 255))
+def draw_label(draw: ImageDraw.ImageDraw, x: int, y: int, max_width: int, text: str):
+    label_font = fit_text(draw, text, AVENIR_NEXT, 20, 16, max_width - 34)
+    label_bbox = draw.textbbox((0, 0), text, font=label_font)
+    label_width = min(max_width, (label_bbox[2] - label_bbox[0]) + 36)
+    draw.rounded_rectangle((x, y, x + label_width, y + 38), radius=18, fill=RED)
+    text_x = x + (label_width - (label_bbox[2] - label_bbox[0])) / 2
+    text_y = y + 8
+    draw.text((text_x, text_y), text, font=label_font, fill=(255, 255, 255))
 
 
 def web_flyer():
@@ -234,7 +239,7 @@ def promo_price_box(draw: ImageDraw.ImageDraw, x: int, y: int, w: int, h: int, i
 
     draw.line((divider_x, y + 28, divider_x, y + h - 28), fill=LINE, width=2)
 
-    draw_label(draw, (x + 22, y + 20, x + 228, y + 58), item["badge"])
+    draw_label(draw, x + 22, y + 20, 250, item["badge"])
     title = item.get("titulo") or item["producto"]
     title_font = fit_text(draw, title, BASKERVILLE, 28, 21, left_w - 8)
     title_wrapped = wrap_text(draw, title, title_font, left_w - 8)
@@ -275,7 +280,7 @@ def wednesday_flyer():
 
     logo = contain(crop_near_white(Image.open(LOGO_PATH)), 118, 74)
     image.paste(logo, (MARGIN - 4, 78), logo)
-    qr = contain(Image.open(QR_PATH).convert("RGBA"), 198, 198)
+    qr = contain(Image.open(QR_PATH).convert("RGBA"), 158, 158)
 
     title_font = font(DIDOT, 68)
     sub_font = font(BASKERVILLE, 48)
@@ -310,14 +315,27 @@ def wednesday_flyer():
 
     bottom_box = (MARGIN, 1360, WIDTH - MARGIN, HEIGHT - 80)
     round_box(draw, bottom_box, radius=34)
-    draw.text((bottom_box[0] + 40, bottom_box[1] + 36), "Escanea y revisa la página completa", font=font(BASKERVILLE, 32), fill=BLACK)
-    draw.multiline_text((bottom_box[0] + 40, bottom_box[1] + 92), "Consulta precios, promociones,\nreparto a domicilio y pedidos por WhatsApp.", font=font(AVENIR, 24), fill=TAUPE, spacing=6)
-    image.paste(qr, (bottom_box[0] + 38, bottom_box[1] + 176), qr)
+    draw.text((bottom_box[0] + 40, bottom_box[1] + 34), "Escanea y revisa la página completa", font=font(BASKERVILLE, 32), fill=BLACK)
+    draw.multiline_text((bottom_box[0] + 40, bottom_box[1] + 88), "Consulta precios, promociones,\nreparto a domicilio y pedidos por WhatsApp.", font=font(AVENIR, 24), fill=TAUPE, spacing=6)
 
-    draw.text((bottom_box[0] + 280, bottom_box[1] + 180), "carnesespinosa.com.mx", font=font(AVENIR_NEXT, 32), fill=RED_DARK)
-    draw.text((bottom_box[0] + 280, bottom_box[1] + 236), BUSINESS["whatsappDisplay"], font=font(AVENIR_NEXT, 44), fill=GREEN)
-    legal = wrap_text(draw, PRICING["seccionPromociones"]["legalNote"], font(AVENIR, 20), 510)
-    draw.multiline_text((bottom_box[0] + 280, bottom_box[1] + 304), legal, font=font(AVENIR, 20), fill=TAUPE, spacing=4)
+    qr_panel = (bottom_box[0] + 38, bottom_box[1] + 156, bottom_box[0] + 274, bottom_box[1] + 358)
+    draw.rounded_rectangle(qr_panel, radius=30, fill=BEIGE, outline=LINE, width=2)
+    centered(draw, (qr_panel[0] + qr_panel[2]) // 2, qr_panel[1] + 16, "ESCANEA AQUÍ", font(AVENIR_NEXT, 18), RED_DARK)
+    qr_x = qr_panel[0] + (qr_panel[2] - qr_panel[0] - qr.width) // 2
+    qr_y = qr_panel[1] + 42
+    image.paste(qr, (qr_x, qr_y), qr)
+
+    info_x = qr_panel[2] + 44
+    draw.text((info_x, bottom_box[1] + 166), "Visita la página", font=font(AVENIR_NEXT, 18), fill=TAUPE)
+    url_pill = (info_x, bottom_box[1] + 192, bottom_box[2] - 42, bottom_box[1] + 246)
+    draw.rounded_rectangle(url_pill, radius=24, fill=(252, 245, 238))
+    centered(draw, (url_pill[0] + url_pill[2]) // 2, url_pill[1] + 12, "carnesespinosa.com.mx", font(AVENIR_NEXT, 28), RED_DARK)
+    draw.text((info_x, bottom_box[1] + 262), BUSINESS["whatsappDisplay"], font=font(AVENIR_NEXT, 46), fill=GREEN)
+
+    legal_band = (info_x, bottom_box[1] + 320, bottom_box[2] - 42, bottom_box[1] + 384)
+    draw.rounded_rectangle(legal_band, radius=24, fill=(252, 249, 244))
+    legal = wrap_text(draw, PRICING["seccionPromociones"]["legalNote"], font(AVENIR, 18), (legal_band[2] - legal_band[0]) - 28)
+    draw.multiline_text((legal_band[0] + 16, legal_band[1] + 11), legal, font=font(AVENIR, 18), fill=TAUPE, spacing=4)
     image.save(OUT_WEDNESDAY, quality=95)
 
 
