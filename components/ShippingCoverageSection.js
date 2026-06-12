@@ -24,32 +24,12 @@ export default function ShippingCoverageSection({
             Revisa tu envío por código postal
           </h2>
           <p className="mt-4 max-w-xl text-base font-medium leading-7 text-vino-700 sm:text-lg">
-            Consulta en segundos si tu pedido entra en zona de envío sin costo
-            , si aplica la tarifa de reparto o si tu zona no tiene cobertura.
+            En segundos sabrás si tu pedido entra gratis, si aplica envío o si
+            tu zona no tiene cobertura.
           </p>
-          <p className="mt-4 max-w-xl text-sm leading-7 text-carbon/68 sm:text-base">
-            Ingresa tu código postal y revisa la cobertura antes de cerrar tu
-            pedido. La referencia de salida es {shortAddress}.
-          </p>
-
-          <div className="mt-6 grid gap-3 sm:grid-cols-2">
-            <div className="rounded-[22px] border border-vino-100 bg-vino-700 p-4 text-white shadow-[0_14px_30px_rgba(122,26,42,0.14)]">
-              <p className="text-xs uppercase tracking-[0.22em] text-white/72">
-                Consulta rápida
-              </p>
-              <p className="mt-2 text-lg font-semibold leading-7">
-                Respuesta inmediata para envío gratis o con costo.
-              </p>
-            </div>
-
-            <div className="rounded-[22px] border border-humo bg-white p-4 shadow-[0_8px_20px_rgba(95,48,31,0.05)]">
-              <p className="text-xs uppercase tracking-[0.22em] text-carbon/45">
-                Para pedidos
-              </p>
-              <p className="mt-2 text-lg font-semibold leading-7 text-carbon">
-                Úsalo antes de escribir por WhatsApp y agiliza tu compra.
-              </p>
-            </div>
+          <div className="mt-5 flex flex-wrap gap-2">
+            <span className="info-pill">Respuesta inmediata</span>
+            <span className="info-pill">Referencia: {shortAddress}</span>
           </div>
         </div>
 

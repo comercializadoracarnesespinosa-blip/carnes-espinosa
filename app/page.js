@@ -67,16 +67,16 @@ export default function HomePage() {
           whatsappHref={whatsappHref}
         />
 
+        <PriceList
+          categories={catalog.categorias}
+          promotions={catalog.promociones}
+        />
+
         <ShippingCoverageSection
           shippingConfig={shippingConfig}
           shortAddress={business.ubicacionCorta}
           whatsappDisplay={business.whatsappDisplay}
           whatsappHref={whatsappHref}
-        />
-
-        <PriceList
-          categories={catalog.categorias}
-          promotions={catalog.promociones}
         />
 
         <VacuumPackagingSection
@@ -93,6 +93,7 @@ export default function HomePage() {
           mapsUrl={business.googleMapsUrl}
           instagram={business.instagram}
           facebook={business.facebook}
+          locationLabel={business.ubicacionCorta}
         />
 
         <Location

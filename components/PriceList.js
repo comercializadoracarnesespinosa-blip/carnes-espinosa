@@ -57,30 +57,37 @@ export default function PriceList({
 
       <div className="mt-6 space-y-4">
         {categories.map((category, categoryIndex) => (
-          <article
+          <details
             key={category.id}
-            className="animate-floatUp overflow-hidden rounded-[28px] border border-humo bg-[#fffdfa] shadow-[0_12px_28px_rgba(23,19,17,0.05)]"
+            className="group animate-floatUp overflow-hidden rounded-[28px] border border-humo bg-[#fffdfa] shadow-[0_12px_28px_rgba(23,19,17,0.05)]"
+            open={categoryIndex === 0}
             style={{ animationDelay: `${categoryIndex * 80}ms` }}
           >
-            <div className="border-b border-humo bg-[linear-gradient(180deg,rgba(255,241,240,0.92),rgba(255,255,255,0.98))] px-5 py-4 sm:px-6">
-              <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <summary className="list-none cursor-pointer border-b border-humo bg-[linear-gradient(180deg,rgba(255,241,240,0.92),rgba(255,255,255,0.98))] px-5 py-4 [-webkit-details-marker]:hidden sm:px-6">
+              <div className="flex items-start justify-between gap-4">
                 <div className="min-w-0">
-                  <div className="flex flex-wrap items-center gap-2">
-                    <p className="eyebrow">{category.etiqueta || "Sección"}</p>
-                  </div>
+                  <p className="eyebrow">{category.etiqueta || "Sección"}</p>
                   <h3 className="mt-1 font-display text-3xl text-carbon sm:text-[2.35rem]">
                     {category.nombre}
                   </h3>
                   <p className="mt-2 max-w-2xl text-sm leading-6 text-carbon/62">
                     {category.descripcion}
                   </p>
+                  <p className="mt-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-carbon/46">
+                    Toca para abrir o cerrar
+                  </p>
                 </div>
 
-                <span className="w-fit rounded-full border border-humo bg-white px-3 py-2 text-xs uppercase tracking-[0.18em] text-carbon/58">
-                  {category.productos.length} productos
-                </span>
+                <div className="flex shrink-0 flex-col items-end gap-2">
+                  <span className="w-fit rounded-full border border-humo bg-white px-3 py-2 text-xs uppercase tracking-[0.18em] text-carbon/58">
+                    {category.productos.length} productos
+                  </span>
+                  <span className="flex h-11 w-11 items-center justify-center rounded-full border border-vino-100 bg-vino-50 text-xl text-vino-700 transition group-open:rotate-45">
+                    +
+                  </span>
+                </div>
               </div>
-            </div>
+            </summary>
 
             <ul className="divide-y divide-humo/80">
               {category.productos.map((product) => {
@@ -139,7 +146,7 @@ export default function PriceList({
                 );
               })}
             </ul>
-          </article>
+          </details>
         ))}
       </div>
 
