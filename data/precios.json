@@ -43,11 +43,11 @@
         "destacado": true
       },
       {
-        "producto": "Molida Sirloin",
+        "producto": "Molida Clásica",
         "badge": "COMPRA SEMANAL",
         "categoria": "La Mesa",
         "copy": "Práctica para guisados, hamburguesas y comidas del diario.",
-        "precioPromocional": 230,
+        "precioPromocional": 210,
         "unidad": "kg"
       },
       {
@@ -64,16 +64,16 @@
         "badge": "PARA ASAR",
         "categoria": "La Mesa",
         "copy": "Ideal para asar o preparar al gusto.",
-        "precioAnterior": 270,
         "precioPromocional": 255,
         "unidad": "kg"
       },
       {
-        "producto": "Chambarete S/H",
-        "badge": "PARA CALDO",
+        "producto": "Bistec de Diezmillo",
+        "titulo": "Diezmillo",
+        "badge": "LA MESA",
         "categoria": "La Mesa",
-        "copy": "Los huesos se ponen aparte sin costo.",
-        "precioPromocional": 235,
+        "copy": "Ideal para guisar, asar o preparar al gusto.",
+        "precioPromocional": 240,
         "unidad": "kg"
       },
       {
@@ -81,8 +81,7 @@
         "badge": "LA MESA",
         "categoria": "La Mesa",
         "copy": "Ideal para deshebrar.",
-        "precioAnterior": 260,
-        "precioPromocional": 250,
+        "precioPromocional": 230,
         "unidad": "kg"
       }
     ]
@@ -115,10 +114,67 @@
           "unidadLabel": "Por kilo"
         },
         {
+          "nombre": "Bistec de Diezmillo",
+          "precio": 250,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Molida Sirloin",
+          "precio": 240,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Nuez",
+          "precio": 280,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Molida Clásica",
+          "precio": 220,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
           "nombre": "Contra Filete",
           "precio": 280,
           "unidad": "kg",
           "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Molida Especial",
+          "precio": 250,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo",
+          "descripcion": "Muy buscada para surtir la semana.",
+          "destacado": true
+        },
+        {
+          "nombre": "Falda",
+          "precio": 240,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Concha",
+          "precio": 250,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Empuje",
+          "precio": 250,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Costilla de Roast Beef",
+          "precio": 255,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo",
+          "descripcion": "Ideal para asar o preparar al gusto."
         },
         {
           "nombre": "Costilla de Entrecot S/H",
@@ -128,27 +184,27 @@
           "descripcion": "Ideal para asar o preparar al gusto."
         },
         {
-          "nombre": "Costilla de Roast Beef",
-          "precio": 270,
+          "nombre": "Chambarete C/H",
+          "precio": 180,
           "unidad": "kg",
-          "unidadLabel": "Por kilo",
-          "descripcion": "Ideal para asar o preparar al gusto."
+          "unidadLabel": "Por kilo"
         },
         {
-          "nombre": "Aguja Cargada",
+          "nombre": "Chambarete S/H",
+          "precio": 250,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo",
+          "descripcion": "Los huesos se ponen aparte sin costo."
+        },
+        {
+          "nombre": "Aguja",
           "precio": 145,
           "unidad": "kg",
           "unidadLabel": "Por kilo"
         },
         {
-          "nombre": "Chorizo",
-          "precio": 120,
-          "unidad": "kg",
-          "unidadLabel": "Por kilo"
-        },
-        {
-          "nombre": "Cecina",
-          "precio": 350,
+          "nombre": "Suadero (Preparado o Natural)",
+          "precio": 220,
           "unidad": "kg",
           "unidadLabel": "Por kilo"
         },
@@ -163,51 +219,6 @@
           "precio": 260,
           "unidad": "kg",
           "unidadLabel": "Por kilo"
-        },
-        {
-          "nombre": "Suadero",
-          "precio": 220,
-          "unidad": "kg",
-          "unidadLabel": "Por kilo"
-        },
-        {
-          "nombre": "Nuez",
-          "precio": 280,
-          "unidad": "kg",
-          "unidadLabel": "Por kilo"
-        },
-        {
-          "nombre": "Empuje",
-          "precio": 260,
-          "unidad": "kg",
-          "unidadLabel": "Por kilo"
-        },
-        {
-          "nombre": "Falda",
-          "precio": 260,
-          "unidad": "kg",
-          "unidadLabel": "Por kilo"
-        },
-        {
-          "nombre": "Chambarete S/H",
-          "precio": 240,
-          "unidad": "kg",
-          "unidadLabel": "Por kilo",
-          "descripcion": "Los huesos se ponen aparte sin costo."
-        },
-        {
-          "nombre": "Molida Sirloin",
-          "precio": 240,
-          "unidad": "kg",
-          "unidadLabel": "Por kilo"
-        },
-        {
-          "nombre": "Molida Especial",
-          "precio": 250,
-          "unidad": "kg",
-          "unidadLabel": "Por kilo",
-          "descripcion": "Muy buscada para surtir la semana.",
-          "destacado": true
         }
       ]
     },
@@ -237,28 +248,34 @@
           "unidadLabel": "Por kilo"
         },
         {
-          "nombre": "New York",
-          "precio": 350,
+          "nombre": "Sirloin (Asador)",
+          "precio": 280,
           "unidad": "kg",
           "unidadLabel": "Por kilo"
         },
         {
-          "nombre": "Filete de Res (caña)",
+          "nombre": "New York",
+          "precio": 320,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Filete de Res",
           "precio": 450,
           "unidad": "kg",
           "unidadLabel": "Por kilo"
         },
         {
           "nombre": "Asado de Tira",
-          "precio": 350,
+          "precio": 320,
           "unidad": "kg",
           "unidadLabel": "Por kilo"
         },
         {
-          "nombre": "Tuétano",
-          "precio": 190,
-          "unidad": "paquete",
-          "unidadLabel": "Paquete de 6 canoas"
+          "nombre": "Short Rib",
+          "precio": 280,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
         }
       ]
     },
@@ -275,6 +292,12 @@
           "unidadLabel": "Por kilo",
           "descripcion": "Lista para cocinar y pedir por kilo.",
           "destacado": true
+        },
+        {
+          "nombre": "Cecina",
+          "precio": 350,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
         },
         {
           "nombre": "Hamburguesa de Sirloin",
@@ -319,6 +342,68 @@
           "precio": 350,
           "unidad": "kg",
           "unidadLabel": "Por kilo"
+        }
+      ]
+    },
+    {
+      "id": "embutidos",
+      "nombre": "Embutidos y hueso",
+      "etiqueta": "Lista de precios",
+      "descripcion": "Embutidos, huesos y complementos para caldo, asador y comidas prácticas.",
+      "productos": [
+        {
+          "nombre": "Chistorra",
+          "precio": 220,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Chorizo (de la casa)",
+          "precio": 120,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Chorizo Argentino",
+          "precio": 210,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Chorizo Español",
+          "precio": 210,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Jamón York",
+          "precio": 230,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Hueso (Perico)",
+          "precio": 60,
+          "unidad": "pieza",
+          "unidadLabel": "Por pieza"
+        },
+        {
+          "nombre": "Tuétano rebanado",
+          "precio": 90,
+          "unidad": "kg",
+          "unidadLabel": "Por kilo"
+        },
+        {
+          "nombre": "Tuétano (Canoa)",
+          "precio": 190,
+          "unidad": "paquete",
+          "unidadLabel": "Por paquete"
+        },
+        {
+          "nombre": "Hueso de rodilla",
+          "precio": 30,
+          "unidad": "pieza",
+          "unidadLabel": "Por pieza"
         }
       ]
     },
